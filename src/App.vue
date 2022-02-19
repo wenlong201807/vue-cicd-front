@@ -2,7 +2,7 @@
   <div>
   <h1>1测试页面</h1>
   <ul>
-  <li v-for="(item) in list" :key="item.id">{{item.name}}</li>
+  <li v-for="(item) in list" :key="item.id">{{item.id}}:{{item.name}}</li>
   </ul>
   </div>
 </template>
