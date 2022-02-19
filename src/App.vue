@@ -19,7 +19,7 @@ export default {
   data(){
     return {
       list: [
-        { id: 5, name: '测试猿'}
+        { id: 5, name: '测试猿66'}
       ],
     }
   },
