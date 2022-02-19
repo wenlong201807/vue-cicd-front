@@ -3,7 +3,7 @@ module.exports = {
   outputDir: "dist", // npm run build ⽣成的⽂件夹，默认是dist
   assetsDir: "static", // 在kaixin⽂件夹下⾯⽣成static⽬录存放js,img,css等静态资源
   indexPath: "index.html", // ⽣成的单⽂件的，⽂件名，
-  devServer: {
+  devServer: process.env.NODE_ENV === 'production' ? {} : {
     host: "127.0.0.1", // 配置主机地址
     port: 6008, // 配置运⾏的端⼝
     // port: process.env.NODE_ENV == 'production' ? 6008 : 6008, // 配置运⾏的端⼝
