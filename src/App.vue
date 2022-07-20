@@ -23,7 +23,7 @@ export default {
       ],
     }
   },
-  mounted(){
+  created(){
     axios.get('/api/users').then(res => {
       console.log(res)
       this.list = res.data || [];

@@ -12,7 +12,7 @@ module.exports = {
     proxy: {
       // 配置多个！
       "/api": {
-        target: "http://localhost:6006",
+        target: "http://localhost:6008",
         ws: true, // 跨域地址是https协议！
         changeOrigin: true,
         pathWrite: {
